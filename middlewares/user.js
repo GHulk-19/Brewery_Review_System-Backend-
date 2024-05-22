@@ -1,6 +1,6 @@
 const User = require("../models/Users");
 const jwt = require("jsonwebtoken");
-JWT_SECRET="gowtham";
+const JWT_SECRET="gowtham";
 exports.isAuthenticated = async (req, res, next) => {
   try {
     const token = req.body.token.split(" ")[1];
@@ -9,7 +9,7 @@ exports.isAuthenticated = async (req, res, next) => {
     if (!token) {
       return res.status(401).json({ message: "Please login first" });
     }
-    const decoded = await jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = await jwt.verify(token, JWT_SECRET );
     console.log("decoded", decoded);
     req.user = await User.findById(decoded._id);
     next();
