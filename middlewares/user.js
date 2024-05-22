@@ -1,6 +1,6 @@
 const User = require("../models/Users");
 const jwt = require("jsonwebtoken");
-
+JWT_SECRET="gowtham";
 exports.isAuthenticated = async (req, res, next) => {
   try {
     const token = req.body.token.split(" ")[1];

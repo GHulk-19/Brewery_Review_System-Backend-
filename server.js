@@ -4,7 +4,7 @@ require('dotenv').config();
 const { connectTOMongoDB } = require("./connect")
 const app = express()
 const bodyParser = require('body-parser');
-const mongoURI = process.env.MONGO_URI
+const mongoURI = "mongodb+srv://gowtham:gowtham123@cluster0.hag65jx.mongodb.net/ReviewDB?retryWrites=true&w=majority"
 
 const PORT = 5000
 const apiRoutes = require('./routes/review')
