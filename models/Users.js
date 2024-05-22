@@ -31,7 +31,7 @@ userSchema.methods.matchPasswords = async function (password) {
 };
 
 userSchema.methods.generateToken = async function () {
-  return jwt.sign({ _id: this._id }, process.env.JWT_SECRET);
+  return jwt.sign({ _id: this._id },JWT_SECRET);
 };
 
 module.exports = mongoose.model("User", userSchema);
