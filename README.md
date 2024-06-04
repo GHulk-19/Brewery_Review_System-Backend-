@@ -1,10 +1,10 @@
 # Brewery Review System 
 The Brewery Review System is a full-stack web application designed to help users search for breweries by city, name, or type and provide reviews for the breweries they visit. Users can sign up for a new account or log in to an existing account to access the brewery search feature. The application integrates with the Open Brewery DB API to fetch and display brewery information, and it uses a hosted database to store user reviews. The reviews include a rating from 1 to 5 and a description.
-It leverages the Open Brewery DB API (https://www.openbrewerydb.org) to fetch brewery data. The application features a user-friendly interface built with React.js and Ant Design, and a robust backend powered by Node.js, Express, and MongoDB.
+It leverages the Open Brewery DB API [click](https://www.openbrewerydb.org) to fetch brewery data. The application features a user-friendly interface built with React.js and Ant Design, and a robust backend powered by Node.js, Express, and MongoDB.
 
 ## Deployment
 This project is currently live and accessible at Render: Brewery Review System.
-https://brewery-review-system-frontend-1.onrender.com
+[Click here](https://brewery-review-system-frontend-1.onrender.com)
 
 Frontend Code Repository: https://github.com/GHulk-19/Brewery_Review_System_Frontend
 
